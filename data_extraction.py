@@ -26,7 +26,7 @@ def Clause_extraction(file):
         for page in reader.pages:
             text += page.extract_text()
          
-    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY1"))
     # client = Groq(
     #     api_key=os.environ.get("GROQ_API_KEY"),
     # )
@@ -103,7 +103,7 @@ def Clause_extraction_with_summarization(file):
         for page in reader.pages:
             text += page.extract_text()
          
-    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
+    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY2"))
     # client = Groq(
     #     api_key=os.environ.get("GROQ_API_KEY"),
     # )
