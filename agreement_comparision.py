@@ -36,8 +36,8 @@ def document_type(file):
         for page in reader.pages:
             text += page.extract_text()
             
-    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
-    # print(os.getenv("GEMINI_API_KEY"))
+    client = genai.Client(api_key=os.getenv("GEMINI_API_KEY3"))
+    # print(os.getenv("GEMINI_API_KEY3"))
     prompt=f"""
         Tell me what type of document is this
         
